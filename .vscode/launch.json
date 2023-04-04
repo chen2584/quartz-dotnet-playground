@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "InMemory",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-in-memory",
+            "program": "${workspaceFolder}/src/Quartz.JobStore.InMemory/bin/Debug/net7.0/Quartz.JobStore.InMemory.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/Quartz.JobStore.Ado",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": "Ado",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-ado",
+            "program": "${workspaceFolder}/src/Quartz.JobStore.Ado/bin/Debug/net7.0/Quartz.JobStore.Ado.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/Quartz.JobStore.Ado",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        }
+    ]
+}
